@@ -8,7 +8,7 @@ const styles = {
     listStyleType: "none",
   }
 }
-function NavTabs({ currentPage, handlePageChange }) {
+function Navigation({ currentPage, handlePageChange }) {
   return (
     <ul styles={styles.listStyles} className="nav ">
       <li className="nav-item">
@@ -56,4 +56,4 @@ function NavTabs({ currentPage, handlePageChange }) {
   );
 }
 
-export default NavTabs;
+export default Navigation;
