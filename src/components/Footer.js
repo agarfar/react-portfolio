@@ -11,7 +11,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const styles = {
     footerStyle: {
-        background: 'purple',
+        background: 'blue',
         position: 'fixed',
         bottom: 0,
         width: '100%',

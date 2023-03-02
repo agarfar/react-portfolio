@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Header.css';
-import '../styles/Navbar.css';
 import Navigation from './Navigation';
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads

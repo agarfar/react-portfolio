@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import Navbar from './Navbar';
 // import NavTabs from './NavTabs';
+import '../styles/Section.css';
 import Header from './Header';
 import Resume from './pages/Resume';
 import About from './pages/About';
@@ -28,11 +29,12 @@ export default function Section() {
 
   return (
     <div>
-      {/* We are passing the currentPage from state and the function to update it */}
-      {/* <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} /> */}
       <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       {/* Here we are calling the renderPage method which will return a component  */}
+      <section>
       {renderPage()}
+      </section>
+      
     </div>
   );
 }

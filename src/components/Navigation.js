@@ -8,6 +8,9 @@ const styles = {
     listStyleType: "none",
   }
 }
+
+// const [currentPage, setCurrentPage] = useState('About');
+
 function Navigation({ currentPage, handlePageChange }) {
   return (
     <ul styles={styles.listStyles} className="nav ">

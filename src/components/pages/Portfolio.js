@@ -2,8 +2,22 @@ import React from 'react';
 import Project from '../Project.js'
 
 const styles = {
-  containerStyle: {
-
+  mainContainerStyle: {
+    display: "flex",
+    // flexDirection: "row",
+    justifyContent: "center"
+  },
+  leftContainerStyle: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    width: '50%'
+  },
+  rightContainerStyle: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    width: '50%'
   }
 }
 
@@ -38,18 +52,29 @@ const projects = {
     deployed: '',
     GitHub: ''
   },
+  project6: {
+    image: '',
+    title: 'Test6',
+    deployed: '',
+    GitHub: ''
+  },
 }
 
 export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <div style={styles.containerStyle}>
-        <Project {...projects.project1} />
-        <Project {...projects.project2} />
-        <Project {...projects.project3} />
-        <Project {...projects.project4} />
-        <Project {...projects.project5} />
+      <div style={styles.mainContainerStyle}>
+        <div style={styles.leftContainerStyle}>
+          <Project {...projects.project1} />
+          <Project {...projects.project2} />
+          <Project {...projects.project3} />
+        </div>
+        <div style={styles.rightContainerStyle}>
+          <Project {...projects.project4} />
+          <Project {...projects.project5} />
+          <Project {...projects.project6} />
+        </div>
       </div>
     </div>
   );

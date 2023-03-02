@@ -2,17 +2,18 @@ import React from 'react';
 import { BsGithub } from "react-icons/bs";
 
 export default function Project(props) {
+
   const projectStyle = {
-    // width: '18rem',
+    width: '35%',
   };
 
   return (
-    <div className="container">
-      <div className="card" style={projectStyle}>
+    <div className="container" style={projectStyle}>
+      <div className="card" >
         <img
           className="card-img-top"
           src={props.image}
-          alt="Card cap"
+          alt={props.title}
         />
         <div className="card-body">
           {/* <p className="card-text">Description: {props.description}</p> */}

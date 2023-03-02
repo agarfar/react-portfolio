@@ -17,23 +17,25 @@ export default function Resume() {
       </ul>
       <h3>Backend Proficincies</h3>
       <ul>
-        MySQL
+        <li>
+          MySQL
+        </li>
         <li>
           Node.js
         </li>
-        MongoDB
+        <li>
+          MongoDB
+        </li>
         <li>
           Express.js
         </li>
-        React
-        {/* <li>
-
-        </li>
-        
         <li>
-
-        </li> */}
+          React
+        </li>
       </ul>
+      <a href="src/assets/files/Farris_Resume.zip" download="Farris_Resume.zip">
+        Resume
+      </a>
     </div>
   );
 }
